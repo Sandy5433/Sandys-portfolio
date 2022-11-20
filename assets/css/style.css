@@ -1,8 +1,7 @@
 
 :root {
     --tiffany: rgba(73, 218, 226, 1);
-    --navy: rgba(2, 12, 48, 1);
-
+    --navy: rgb(203, 233, 32);
 }
 
 * {
@@ -11,38 +10,31 @@
 
 header {
     position: relative;
-    padding: 10px;
     background-color: var(--navy);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    /* text-decoration: none; this didn't remove hyperlink! */
 }
 
 header h1 {
-    position: relative;
     background-color: var(--tiffany);
     color: var(--navy);
-    padding: 5px;
+    padding: 5px 50px;
+    /* text-align: end; this didn't align text to right */
 }
 
 header nav {
-    position: absolute;
-    /* display: flex;
-    flex-direction: row; */
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
-    color: var(--tiffany);
-    text-decoration: none;
-}
- 
-header nav ul {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
-    }
+    margin-left: 700px;
+    padding: 30px ;
+    /* float: right; */
+    /* text-align: right; Had to use margin to push to right corner as both function didn't work */
+}
 
-header nav ul li {
-    padding: 20px;
+nav a {
+    padding: 10px;
 }
 
 .subheading {
@@ -55,6 +47,11 @@ header nav ul li {
     bottom: 8px;
 }
 
+#subheader {
+    width:100%;
+    height:100%;
+}
+
 .content {
     display: flex;
     flex-direction: row;
@@ -65,23 +62,35 @@ div ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    /* text-decoration: none; this didn't remove the link in contact details */
+    text-decoration: none;
 }
 
 div ul li {
     padding: 20px;
 } 
 
-/* doesn't work either
+.flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
 .content-header {
     text-align: right;
-} */
+}
 
 /* this makes no difference to the position of Aboutme/work/contactme
 section > h1 {
     display: flex;
     flex-direction: row;
     justify-content:flex-end;
+} */
+
+/* .topic {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 } */
 
 img {
