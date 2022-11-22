@@ -86,7 +86,7 @@ div ul li {
 .intro {
     font-size: 28px;
     }
-    
+
 .left {
     width: 25%;
     display: flex;
@@ -119,10 +119,14 @@ section img {
     font-size: 28px;
 
 }
-/* @media screen and (max-width: 992px) {
-    header{
-        display: 
+
+@media screen and (max-width: 1450px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        
     }
-} */
+    
+}
 
 
