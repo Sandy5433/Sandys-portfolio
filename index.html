@@ -16,54 +16,63 @@
 
 <!-- Navbar -->
     <nav>
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contactme">Contact Me</a>
         <a href="#">Resume</a>
     </nav>
 
 </header>
 
-    <div class="subheading">
-        <img id="subheader" src="./assets/images/sky.jpg" alt="background"/>
-        <div> <h2 class="subtitle">Cool subtitle here!</h2>
-            </div>
-
+    <div class="subheader">
+        <img id="subheader-pic" src="./assets/images/sky.jpg" alt="subheader"/>
+        <h2 class="subtitle">Cool subtitle here!</h2>
     </div>
 
 
 <main>
-    <section class="content">
+    <section class="content" id="aboutme">
+    
+      <section class="left" >
         <h1 class="content-header">About Me</h1>
-        <div class="flex-end">
-          <p> I am learning to code...</p>
-        </div>
-
+      </section>
+        <p> I am learning to code...</p>
+        
     </section>
 
-    <section class="content">
+    <section class="content" id="work">
+    
+    <section class="left"> 
         <h1 class="content-header">Work</h1>
-        <div class="flex-end">
+    </section>
+        <div class="content-work">
             <section class="main-work">
-                <img src="./assets/images/ocean.jpg" alt="surf-report"/>
-                <h2>Surf Report MERN Stack</h2>
+                <a href="https://github.com/Sandy5433?tab=repositories">
+                    <img id="mainwork" src="./assets/images/ocean.jpg" alt="surf-report"/>
+                </a>
+                <!-- <h3>Surf Report MERN Stack</h3> -->
              </section>
              <section class="other-works">
                 <img src="./assets/images/LED.jfif" alt="LED Wall"/>
-                <h2>LED Wall Node/IoT</h2>
+                <!-- <h3>LED Wall Node/IoT</h3> -->
                 <img src="./assets/images/circuit.jfif" alt="Calculator"/>
-                <h2>Calculator React/JavaScript/CSS</h2>
+                <!-- <h3>Calculator React/JavaScript/CSS</h3> -->
                 <img src="./assets/images/flower.jfif" alt="Pastel Puzzels"/>
-                <h2>Pastel Puzzels MERN Stack</h2>
+                <!-- <h3>Pastel Puzzels MERN Stack</h3> -->
                 <img src="./assets/images/tree.jfif" alt="Run Buddy"/>
-                <h2>Run Buddy HTML/CSS</h2>
+                <!-- <h3>Run Buddy HTML/CSS</h3> -->
             </section>
         </div>
     </section>
 
     <section class="content">
+
+    <section class="left" id="contactme">
         <h1 class="content-header">Contact Me</h1>
-        <div class="flex-end">
+    </section>
+
+    <section class="right">
+           <div class="flex-end">
         <ul>
             <li><a href="#">0420 349 236</a></li>
             <li><a href="#">sandyhung83@yahoo.com.tw</a></li>
@@ -72,7 +81,8 @@
             <li><a href="#">Spotify</a></li>
         </div>
         </ul>
-            
+    </section>
+
     </section>
 
 

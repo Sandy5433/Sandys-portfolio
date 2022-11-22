@@ -1,7 +1,7 @@
 
 :root {
     --tiffany: rgba(73, 218, 226, 1);
-    --navy: rgb(203, 233, 32);
+    --navy: rgb(6, 27, 104);
 }
 
 * {
@@ -13,22 +13,28 @@ header {
     background-color: var(--navy);
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    height: 90px;
     /* text-decoration: none; this didn't remove hyperlink! */
+}
+a {
+    text-decoration: none;
 }
 
 header h1 {
+    position: relative;
     background-color: var(--tiffany);
     color: var(--navy);
-    padding: 5px 50px;
+    font-size: 30px;
+    padding: 5px 10px 5px 40px;
     /* text-align: end; this didn't align text to right */
 }
 
 header nav {
     display: flex;
     flex-direction: row;
-    margin-left: 700px;
-    padding: 30px ;
+    margin-left: 850px;
+    padding: 25px ;
+    color: var(--tiffany);
     /* float: right; */
     /* text-align: right; Had to use margin to push to right corner as both function didn't work */
 }
@@ -37,25 +43,22 @@ nav a {
     padding: 10px;
 }
 
-.subheading {
+.subheader {
     position: relative;
     }
 
 .subtitle {
     position: absolute;
-    right: 10px;
+    right: 50px;
     bottom: 8px;
+    color: var(--navy);
+    background-color: var(--tiffany);
+    padding: 10px;
 }
 
-#subheader {
+#subheader-pic {
     width:100%;
-    height:100%;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-    
+    height:170px;
 }
 
 div ul {
@@ -69,16 +72,42 @@ div ul li {
     padding: 20px;
 } 
 
-.flex-end {
+.content {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+        margin: 100px;
 }
-
 
 .content-header {
-    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+    border: 5px;
+    border-right-color:black;
+    border-right-style: solid;
+    padding: 50px;
 }
+
+.content-work {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+.right {
+    width: 75%;
+}
+
+
 
 /* this makes no difference to the position of Aboutme/work/contactme
 section > h1 {
@@ -93,9 +122,19 @@ section > h1 {
     justify-content: flex-end;
 } */
 
-img {
-    width: 50px;
-    height: 30px%;
+#mainwork {
+    width: 600px;
+    height: 200px;
+
+}
+
+section img {
+    width: 300px;
+    height: 120px;
+    border: 10px;
+    margin: 20px;
+    border-style: solid;
+    border-color: var(--tiffany);
 }
 
 /* @media screen and (max-width: 992px) {
