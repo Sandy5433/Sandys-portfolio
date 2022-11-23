@@ -104,7 +104,11 @@ div ul li {
 
 }
 
-.mainwork img:hover {
+#mainwork:hover {
+    opacity: 0.8;
+}
+
+.otherwork:hover {
     opacity: 0.8;
 }
 
@@ -127,7 +131,7 @@ section img {
 @media screen and (max-width: 1450px) {
     header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         }
     main {
         max-width: 1200px;
