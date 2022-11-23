@@ -13,6 +13,7 @@ header {
     background-color: var(--navy);
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     height: 90px;
 }
 
@@ -29,13 +30,13 @@ header nav {
     flex-direction: row;
     margin-left: 900px;
     padding: 25px ;
-    color: white;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 nav a {
     padding: 10px;
     text-decoration: none;
+    color: var(--tiffany);
 }
 
 .subheader {
@@ -101,6 +102,10 @@ div ul li {
     width: 860px;
     height: 300px;
 
+}
+
+.mainwork img:hover {
+    opacity: 0.8;
 }
 
 section img {
