@@ -1,14 +1,10 @@
-
 :root {
     --tiffany: rgba(73, 218, 226, 1);
     --navy: rgb(6, 27, 104);
 }
-
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: papayawhip;
 }
-
 header {
     position: relative;
     background-color: var(--navy);
@@ -17,7 +13,6 @@ header {
     justify-content: space-between;
     
 }
-
 header h1 {
     position: relative;
     background-color: var(--tiffany);
@@ -25,25 +20,18 @@ header h1 {
     font-size: 30px;
     padding: 5px 10px 5px 40px;
    }
-
 header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     padding: 25px ;
     font-size: 30px;
 }
-
 nav a {
     padding: 10px;
     text-decoration: none;
     color: var(--tiffany);
 }
-
 .subheader {
     position: relative;
     }
-
 .subtitle {
     position: absolute;
     right: 50px;
@@ -52,29 +40,26 @@ nav a {
     background-color: var(--tiffany);
     padding: 10px;
 }
-
 #subheader-pic {
     width:100%;
     height:170px;
 }
-
 div ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     text-decoration: none;
 }
-
 div ul li {
     padding: 20px;
 } 
-
+main {
+    background-color: gainsboro;
+}
 .content {
     display: flex;
     flex-direction: row;
-    margin: 100px;
 }
-
 .content-header {
     margin: 50px;
     border: 5px;
@@ -83,52 +68,57 @@ div ul li {
     padding: 50px;
     font-size: 48px;
 }
-
 .intro {
     font-size: 28px;
     }
-
 .left {
     width: 25%;
     display: flex;
     justify-content: flex-end;
+    text-align: right;
     }
-
 .right {
     width: 75%;
-
 }
-
 #mainwork {
-    width: 860px;
-    height: 300px;
-
+    width: 83%;
+    height: 30%;
 }
-
+.otherwork {
+    width: 40%;
+    height: 15%;
+}
 #mainwork:hover {
     opacity: 0.8;
 }
-
 .otherwork:hover {
     opacity: 0.8;
 }
-
 section img {
-    width: 400px;
-    height: 200px;
+    /* width: 400px;
+    height: 200px; */
     border: 10px;
     margin: 20px;
     border-style: solid;
     border-color: var(--tiffany);
 }
+.content-work {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+        padding: 10px;
+        
+      }
+     
+#mainwork {
+        grid-column: 1 / span 2;
+      }
 
 .contact {
     display: flex;
     padding-top: 70px;
     font-size: 28px;
-
 }
-
 @media screen and (max-width: 1450px) {
     header {
         display: flex;
@@ -140,13 +130,9 @@ section img {
     }
     main {
         max-width: 1200px;
-
-
     }
     
     nav a {
         display: block;
     }
 }
-
-
