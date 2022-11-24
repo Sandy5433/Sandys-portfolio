@@ -95,19 +95,13 @@ main {
     opacity: 0.8;
 }
 section img {
-    /* width: 400px;
-    height: 200px; */
     border: 10px;
     margin: 20px;
     border-style: solid;
     border-color: var(--tiffany);
 }
 .content-work {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 20px;
-        padding: 10px;
-        
+        display: grid;      
       }
      
 #mainwork {
@@ -131,8 +125,14 @@ section img {
     main {
         max-width: 1200px;
     }
-    
     nav a {
         display: block;
+    }
+    a img {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
     }
 }
