@@ -11,7 +11,7 @@ The developer will continue to update their portfolio as they progress through t
 ## Usage
 
 Below is a screenshot of the deployed webpage
-![alt="SandysPortfolio"]
+![alt="SandysPortfolio"](assets/images/sandyportfolio.png)
 
 Click on the nagivation list on the top right corner to be directed to the selected selection.
 Webpage layout is adaptive to various screensizes to support viewing of the portfolio on different devices.
